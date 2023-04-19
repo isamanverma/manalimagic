@@ -1,0 +1,261 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    font-size: 12px;
+    padding: 0px;
+}
+
+.header::before {
+    content: "";
+    width: 100%;
+    height: 33.33em;
+
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    z-index: -1;
+    background-image: url('https://picsum.photos/1600/400');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
+}
+
+.header {
+    height: 33.33em;
+    background-repeat: no-repeat;
+}
+
+.top {
+    background-color: #212121;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 3.35em;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    filter: invert(100);
+    width: 6em;
+    height: 6em;
+    margin-left: 1em;
+}
+
+#current li {
+    border-radius: 0.83em;
+    color: #212121 !important;
+    background-color: #ECEFF1;
+}
+
+#currentpage a {
+    padding: 0px;
+    color: #212121;
+}
+
+
+.navbar a {
+    color: #ECEFF1;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.navbar ul {
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 1.5em;
+    padding: 2em;
+    padding-bottom: 0em;
+    padding-top: 0em;
+    border-radius: 0.83em;
+    border: 0.1em solid #212121;
+}
+
+.navbar li :hover {
+    list-style: none;
+    border-radius: 0.83em;
+    padding: 2em;
+    color: #ECEFF1;
+    border: 0.1em solid #ECEFF1;
+    padding-bottom: 0em;
+    padding-top: 0em;
+}
+
+
+
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.title h1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0.1em;
+    color: #FFA500;
+    font-size: 10em;
+    font-family: 'Permanent Marker';
+}
+
+.subtitle {
+    width: 109vw;
+    margin: -10.899999999999999em
+}
+
+.subtitle h2 {
+    background-color: #7CB342;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0.1em;
+    color: #212121;
+    font-size: 2em;
+}
+
+
+.calltoaction button {
+    border: none;
+    margin-right: 1em;
+    border-radius: 0.83em;
+    background-color: #212121;
+    color: #ECEFF1;
+    padding: 0.6em;
+    display: block;
+    position: relative;
+    right: 0.4em;
+    border: 0.1em solid #ECEFF1;
+}
+
+.calltoaction a :hover {
+    cursor: pointer;
+    background-color: #ECEFF1;
+    color: #212121;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.calltoaction a {
+    text-decoration-line: none;
+}
+
+.sitecontent {
+    color: #212121;
+    padding: 2em 4em 1.3em 4em;
+    font-size: 2.5em;
+}
+
+.featured {
+    color: #ECEFF1;
+    background-color: #212121;
+    margin: 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70em;
+    flex-wrap: wrap;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+}
+
+.tileheading {
+    color: #7CB342;
+    font-weight: 600;
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.tilecontent {
+    width: 27em;
+    height: 18em;
+    margin: 1em;
+    font-size: 1.3em;
+}
+
+.tileimage img {
+
+    margin: 1.8em;
+    width: 35em;
+    height: 25em;
+}
+
+/* #Image Grid: Code grabbed from internet  */
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid>img {
+    box-shadow: 0.4em 0.5em 0.2em #9d9d9d;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+
+/* #End of web copied code  */
+#conclusion1 {
+    margin: 0%;
+}
+
+#conclusion2 {
+    display: inline;
+    font-size: 2.5em;
+    background-color: #FFA500;
+    margin-left: 4em;
+    padding: 0em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    color: #7CB342;
+    font-family: 'Permanent Marker';
+}

@@ -1,0 +1,142 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    font-size: 12px;
+    padding: 0px;
+}
+
+.header {
+    height: 33.33em;
+    margin-bottom: 10em;
+    background-image: url('https://picsum.photos/1600/400?grayscale');
+    background-repeat: no-repeat;
+}
+
+.top {
+    background-color: #212121;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 3.35em;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    filter: invert(100);
+    width: 6em;
+    height: 6em;
+    margin-left: 1em;
+}
+
+#current li{
+    border-radius: 0.83em;
+    color: #212121 !important;
+    background-color: #ECEFF1;
+}
+#currentpage a{
+    padding: 0px;
+    color: #212121;
+}
+
+
+
+.navbar a {
+    color: #ECEFF1;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li{
+    list-style: none;
+    font-size: 1.5em;
+    padding: 2em;
+    padding-bottom: 0em;
+    padding-top: 0em;
+}
+
+
+.navbar li :hover {
+    list-style: none;
+    border-radius: 0.83em;
+    padding: 1.8em;
+    color: #ECEFF1;
+    border: 0.1em solid #ECEFF1;
+    padding-bottom: 0em;
+    padding-top: 0em;
+}
+
+
+
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.title h1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0.1em;
+    color: #FFA500;
+    font-size: 10em;
+    font-family: 'Permanent Marker';
+}
+
+.subtitle {
+    width: 109vw;
+    margin: -10.899999999999999em
+}
+
+.subtitle h2 {
+    background-color: #7CB342;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0.1em;
+    color: #212121;
+    font-size: 2em;
+}
+
+
+.calltoaction button {
+    border: none;
+    margin-right: 1em;
+    border-radius: 0.83em;
+    background-color: #212121;
+    color: #ECEFF1;
+    padding: 0.6em;
+    display: block;
+    position: relative;
+    right: 0.4em;
+    border: 0.1em solid #ECEFF1;
+}
+
+.calltoaction a :hover {
+    cursor: pointer;
+    background-color: #ECEFF1;
+    color: #212121;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.calltoaction a {
+    text-decoration-line: none;
+}
+
+.sitecontent {
+    margin: 0em;
+    color: #212121;
+    padding: 1em 4em 1em 4em;
+    font-size: 2.5em;
+}
