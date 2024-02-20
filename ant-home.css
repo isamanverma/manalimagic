@@ -9,9 +9,9 @@ body {
 
 .header::before {
     content: "";
-    width: 100%;
+    width: 100vw;
+    box-sizing: border-box;
     height: 33.33em;
-
     position: absolute;
     top: 0em;
     left: 0em;
@@ -24,6 +24,7 @@ body {
 
 .header {
     height: 33.33em;
+    width:100vw;
     background-repeat: no-repeat;
 }
 
@@ -55,7 +56,6 @@ body {
     padding: 0px;
     color: #212121;
 }
-
 
 .navbar a {
     color: #ECEFF1;
@@ -108,8 +108,8 @@ body {
 }
 
 .subtitle {
-    width: 109vw;
-    margin: -10.899999999999999em
+    width: 100vw;
+    margin-top: -8.899999999999999em;
 }
 
 .subtitle h2 {
@@ -170,13 +170,16 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: wrap-reverse;
+    /*flex-wrap: wrap-reverse; */
+    width:100vw;
+    justify-content: space-around;
     flex-direction: row;
 }
 
 .tile {
     display: flex;
     flex-direction: column;
+    
 }
 
 .tileheading {
@@ -196,9 +199,8 @@ body {
 }
 
 .tileimage img {
-
-    margin: 1.8em;
-    width: 35em;
+    margin:2px;
+    width: 30em;
     height: 25em;
 }
 
